@@ -9,7 +9,19 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/customcompoundviewdemo" />
+            <option value="$PROJECT_DIR$/detaildemo" />
+            <option value="$PROJECT_DIR$/dialog" />
+            <option value="$PROJECT_DIR$/fragdemo" />
+            <option value="$PROJECT_DIR$/fragmentdemo" />
+            <option value="$PROJECT_DIR$/fragmentsdemo" />
             <option value="$PROJECT_DIR$/interactivity" />
+            <option value="$PROJECT_DIR$/listview" />
+            <option value="$PROJECT_DIR$/listviewdemo" />
+            <option value="$PROJECT_DIR$/notifications" />
+            <option value="$PROJECT_DIR$/statusbarnotification" />
+            <option value="$PROJECT_DIR$/sunday" />
+            <option value="$PROJECT_DIR$/viewanimations" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

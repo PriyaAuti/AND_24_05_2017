@@ -1,1 +1,1 @@
-include ':app', ':interactivity'
+include ':app', ':interactivity', ':customcompoundviewdemo', ':detaildemo', ':listviewdemo', ':listview', ':viewanimations', ':fragmentdemo', ':fragdemo', ':fragmentsdemo', ':sunday', ':notifications', ':dialog', ':statusbarnotification'

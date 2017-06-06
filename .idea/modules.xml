@@ -4,7 +4,19 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TwentyForthMay.iml" filepath="$PROJECT_DIR$/TwentyForthMay.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customcompoundviewdemo/customcompoundviewdemo.iml" filepath="$PROJECT_DIR$/customcompoundviewdemo/customcompoundviewdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/detaildemo/detaildemo.iml" filepath="$PROJECT_DIR$/detaildemo/detaildemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialog/dialog.iml" filepath="$PROJECT_DIR$/dialog/dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragdemo/fragdemo.iml" filepath="$PROJECT_DIR$/fragdemo/fragdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragmentdemo/fragmentdemo.iml" filepath="$PROJECT_DIR$/fragmentdemo/fragmentdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragmentsdemo/fragmentsdemo.iml" filepath="$PROJECT_DIR$/fragmentsdemo/fragmentsdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/interactivity/interactivity.iml" filepath="$PROJECT_DIR$/interactivity/interactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listview/listview.iml" filepath="$PROJECT_DIR$/listview/listview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listviewdemo/listviewdemo.iml" filepath="$PROJECT_DIR$/listviewdemo/listviewdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notifications/notifications.iml" filepath="$PROJECT_DIR$/notifications/notifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/statusbarnotification/statusbarnotification.iml" filepath="$PROJECT_DIR$/statusbarnotification/statusbarnotification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunday/sunday.iml" filepath="$PROJECT_DIR$/sunday/sunday.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewanimations/viewanimations.iml" filepath="$PROJECT_DIR$/viewanimations/viewanimations.iml" />
     </modules>
   </component>
 </project>
