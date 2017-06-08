@@ -1,5 +1,8 @@
 package com.example.uithread;
 
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
@@ -16,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-       // handler =new Handler(Looper.getMainLooper());
-
-
     }
+
+    
     public void onBtnClick(View view){
-        workerThread();
+      //  workerThread();
+
+        new MyTask().execute(0,100/*params*/);
 
     }
 
@@ -53,5 +56,51 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }).start();
+    }
+    private class MyTask extends AsyncTask<Integer/*params*/, Integer/*progress*/, Boolean/*Result*/>{
+
+        private ProgressDialog pd;
+
+        protected void onPreExecute(){
+            super.onPreExecute();
+            pd = new ProgressDialog(MainActivity.this);
+            pd.setMax(100);
+            pd.setTitle("Title");
+            pd.setMessage("Message");
+            pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            pd.show();
+            // UI thread
+        }
+
+        @Override
+        protected Boolean doInBackground(Integer... params) {
+            // Worker Thread
+
+            for (int i = params[0]; i < params[1]; i++) {
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                publishProgress(i);
+            }
+
+            return true;
+        }
+        protected void onPostExecute(Boolean aBoolean){
+            super.onPostExecute(aBoolean);
+            //UIThread
+            pd.dismiss();
+
+        }
+
+        protected void onProgressUpdate(Integer ... values){
+            super.onProgressUpdate(values);
+
+            ((TextView)findViewById(R.id.txtCntr)).setText(String.valueOf(values[0]));
+            pd.setProgress(values[i]);
+            //UIThread
+
+        }
     }
 }
