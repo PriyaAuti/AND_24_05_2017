@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // custom();
-        simple();
+        custom();
+        //simple();
 
 
     }
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
     private void custom(){
 
         List<MyItem> dataSet=new ArrayList<>();
-        dataSet.add(new MyItem(R.mipmap.ic_launcher,"Apple"));
-        dataSet.add(new MyItem(R.mipmap.ic_launcher,"Android"));
+        dataSet.add(new MyItem(R.mipmap.ic_launcher,"Sachin"));
+        dataSet.add(new MyItem(R.mipmap.ic_launcher,"Mahi"));
 
 
         MyAdapter adapter=new MyAdapter(this,dataSet);
