@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RuntimeAppPermissions</string>
+    <string name="btnClick">Click</string>
+</resources>
