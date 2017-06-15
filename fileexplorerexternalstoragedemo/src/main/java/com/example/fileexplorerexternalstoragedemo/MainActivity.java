@@ -54,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void appPrivateWrite(){
-        File file = new File(getExternalFilesDir(""),"my.txt");
+
+        File file = new File(getExternalFilesDir(Environment.DIRECTORY_DCIM),"my.txt");
+        //File file = new File(getExternalFilesDir(""),"my.txt");
         Log.i(TAG,"App private Path -" + file.getAbsolutePath());
 
         try {
@@ -130,7 +132,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void populateList(){
-        File file = getExternalFilesDir("");
+
+        File file = Environment.getExternalStoragePublicDirectory("");
+        //File file = getExternalFilesDir("");
 
         List<FileItem> fileItems = new ArrayList<>();
         File[] files = file.listFiles();
