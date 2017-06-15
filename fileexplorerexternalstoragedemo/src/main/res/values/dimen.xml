@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="FileItemSize">80dp</dimen>
+    <dimen name="big">20dp</dimen>
+    <dimen name="lil">10dp</dimen>
+</resources>
