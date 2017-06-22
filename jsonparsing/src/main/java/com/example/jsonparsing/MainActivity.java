@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.gson.Gson;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        parseUsingNativeApi();
+       // parseUsingNativeApi();
+
+        parseUsingGson();
     }
 
     private void parseUsingNativeApi() {
@@ -47,4 +51,25 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+
+    private void parseUsingGson() {
+        Gson gson = new Gson();
+        Example our = gson.fromJson(Util.readAssests(this),Example.class);
+        Log.i("@codekul", "Integer - " + our.getKeyNum());
+        Log.i("@codekul", "String - " + our.getKeyString());
+
+        for (String add : our.getAdds()) {
+            Log.i("@codekul", "Add - " + add);
+        }
+
+        Mouse mouse = our.getMouse();
+        Log.i("@codekul", "Mouse Name - " + mouse.getName() + " Mouse Cost - " + mouse.getCost());
+
+        for (Device device : our.getDevices()) {
+            Log.i("@codekul", "device Name - " + device.getName() + " device Cost - " + device.getCost());
+        }
+    }
 }
+
+
