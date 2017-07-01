@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BluetoothDemo</string>
+    <string name="onEnable">Enable Bluetooth</string>
+    <string name="onDiscoverable">Discoverable</string>
+    <string name="onPaired">Paired Devices</string>
+    <string name="onDiscover">Discover unpaired Devices</string>
+    <string name="onServer">Server</string>
+    <string name="onClient">Client</string>
+</resources>
